@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Interest</title>
+</head>
+<body>
+	<form action="#" method="post">
+		<input type="number" id="principal" placeholder="Principal">
+		<input type="number" id="interest" placeholder="Interest">
+		<input type="number" id="year" placeholder="Year">
+		<input type="submit" name="Calculate" onclick="calculatePrincipal()">
+		
+	</form>
+
+</body>
+</html>
+<script type="text/javascript">
+	function calculatePrincipal(){
+		var p = document.getElementById('principal').value;
+		var i = document.getElementById('interest').value;
+		var y = document.getElementById('year').value;
+		var interest = (parseFloat(i).toFixed(2))/100;
+		alert(p*interest*y);
+	}
+</script>
